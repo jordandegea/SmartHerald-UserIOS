@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "self:/Volumes/Donnees/Projets/PushNotification/iOS/DevParse/SharedNews.xcodeproj">
+   </FileRef>
+   <Group
+      location = "group:ParseStarterProject"
+      name = "ParseStarterProject">
+      <FileRef
+         location = "group:Main.storyboard">
+      </FileRef>
+      <FileRef
+         location = "group:SharedNews.xcdatamodeld">
+      </FileRef>
+      <FileRef
+         location = "group:MessageUIViewController.swift">
+      </FileRef>
+      <FileRef
+         location = "group:Commands.swift">
+      </FileRef>
+      <FileRef
+         location = "group:DownloadCallbackFunction.swift">
+      </FileRef>
+      <FileRef
+         location = "group:DownloadTask.swift">
+      </FileRef>
+      <FileRef
+         location = "group:Message.swift">
+      </FileRef>
+      <FileRef
+         location = "group:Service.swift">
+      </FileRef>
+      <FileRef
+         location = "group:MessageTableViewCell.swift">
+      </FileRef>
+      <FileRef
+         location = "group:AppDelegate.swift">
+      </FileRef>
+      <FileRef
+         location = "group:ServiceTableViewCell.swift">
+      </FileRef>
+      <FileRef
+         location = "group:LocalStoredPFQueryTableViewController.swift">
+      </FileRef>
+      <FileRef
+         location = "group:ServiceTableViewController.swift">
+      </FileRef>
+      <FileRef
+         location = "group:ServiceSearchTableViewController.swift">
+      </FileRef>
+      <FileRef
+         location = "group:MessageTableViewController.swift">
+      </FileRef>
+      <FileRef
+         location = "group:ServiceSearchTableViewCell.swift">
+      </FileRef>
+      <FileRef
+         location = "group:LaunchScreen.storyboard">
+      </FileRef>
+   </Group>
+</Workspace>
