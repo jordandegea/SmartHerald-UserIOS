@@ -1,32 +1,24 @@
 //
-//  MessageTableViewController.swift
+//  AbstractMessageTableViewController.swift
 //  SharedNews
 //
-//  Created by Jordan DE GEA on 16/02/2016.
-//  Copyright © 2016 Jordan DE GEA. All rights reserved.
+//  Created by Jordan DE GEA on 17/07/2016.
+//  Copyright © 2016 Parse. All rights reserved.
 //
 
 import UIKit
 import ParseUI
 import Parse
 
-class MessageTableViewController: LocalStoredPFQueryTableViewController {
+class AbstractMessageTableViewController: LocalStoredPFQueryTableViewController {
     // MARK: Properties
     
-    var service:PFObject?
     var currentIndexSelected : NSIndexPath!
     
     // MARK : Outlets
     
     // MARK : Parse Main Query
     
-    override func baseQuery() -> PFQuery {
-        let query = PFQuery(className: "Message")
-        query.whereKey("service", equalTo: (service)!)
-        query.whereKey("sent", equalTo: true)
-        //query.orderByAscending(MyOtherKey)
-        return query
-    }
     
     // MARK : View Functions
     
@@ -84,6 +76,6 @@ class MessageTableViewController: LocalStoredPFQueryTableViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
-
+    
+    
 }

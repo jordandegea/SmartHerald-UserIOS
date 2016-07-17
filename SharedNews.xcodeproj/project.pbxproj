@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		712F70B61D3B9065005ADC35 /* Standalone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 712F70B51D3B9065005ADC35 /* Standalone.plist */; };
+		712F70BB1D3BC01D005ADC35 /* Standalone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 712F70B91D3BBDA6005ADC35 /* Standalone.storyboard */; };
+		71BEB0CF1D3BD2870098A767 /* AbstractMessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BEB0CE1D3BD2870098A767 /* AbstractMessageTableViewController.swift */; };
+		71BEB0D01D3BD2870098A767 /* AbstractMessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BEB0CE1D3BD2870098A767 /* AbstractMessageTableViewController.swift */; };
+		71BEB0D21D3BD3E00098A767 /* StandaloneMessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BEB0D11D3BD3E00098A767 /* StandaloneMessageTableViewController.swift */; };
+		71BEB0D31D3BD3E00098A767 /* StandaloneMessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BEB0D11D3BD3E00098A767 /* StandaloneMessageTableViewController.swift */; };
 		71C734B91D37C2D00032FA12 /* DownloadTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA302391C83532F00C63D00 /* DownloadTask.swift */; };
 		71C734BA1D37C2D00032FA12 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA302431C8353CA00C63D00 /* Service.swift */; };
 		71C734BB1D37C2D00032FA12 /* MessageUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1BCE671C85B129000B5898 /* MessageUIViewController.swift */; };
@@ -14,7 +20,7 @@
 		71C734BD1D37C2D00032FA12 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA302481C8353D000C63D00 /* MessageTableViewCell.swift */; };
 		71C734BE1D37C2D00032FA12 /* ServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA3024A1C8353D000C63D00 /* ServiceTableViewCell.swift */; };
 		71C734BF1D37C2D00032FA12 /* LocalStoredPFQueryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2F98961C85A2650058B132 /* LocalStoredPFQueryTableViewController.swift */; };
-		71C734C01D37C2D00032FA12 /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA3024F1C8353D700C63D00 /* MessageTableViewController.swift */; };
+		71C734C01D37C2D00032FA12 /* SharedMessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA3024F1C8353D700C63D00 /* SharedMessageTableViewController.swift */; };
 		71C734C11D37C2D00032FA12 /* DownloadCallbackFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA302381C83532F00C63D00 /* DownloadCallbackFunction.swift */; };
 		71C734C21D37C2D00032FA12 /* ServiceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA3024E1C8353D700C63D00 /* ServiceTableViewController.swift */; };
 		71C734C31D37C2D00032FA12 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA302421C8353CA00C63D00 /* Message.swift */; };
@@ -29,7 +35,6 @@
 		71C734CD1D37C2D00032FA12 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA81761A49E0D500E65899 /* libsqlite3.dylib */; };
 		71C734CE1D37C2D00032FA12 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA816C1A49DB6800E65899 /* Parse.framework */; };
 		71C734CF1D37C2D00032FA12 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA816B1A49DB6800E65899 /* Bolts.framework */; };
-		71C734D11D37C2D00032FA12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBA302561C8353E200C63D00 /* Main.storyboard */; };
 		71C734D21D37C2D00032FA12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBA302581C8353EA00C63D00 /* LaunchScreen.storyboard */; };
 		71C734D31D37C2D00032FA12 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814C3AC81B69877600E307BB /* Images.xcassets */; };
 		814C3ACB1B69877600E307BB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814C3AC81B69877600E307BB /* Images.xcassets */; };
@@ -54,14 +59,17 @@
 		FBA3024B1C8353D000C63D00 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA302481C8353D000C63D00 /* MessageTableViewCell.swift */; };
 		FBA3024D1C8353D000C63D00 /* ServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA3024A1C8353D000C63D00 /* ServiceTableViewCell.swift */; };
 		FBA302521C8353D700C63D00 /* ServiceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA3024E1C8353D700C63D00 /* ServiceTableViewController.swift */; };
-		FBA302531C8353D700C63D00 /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA3024F1C8353D700C63D00 /* MessageTableViewController.swift */; };
+		FBA302531C8353D700C63D00 /* SharedMessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA3024F1C8353D700C63D00 /* SharedMessageTableViewController.swift */; };
 		FBA302571C8353E200C63D00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBA302561C8353E200C63D00 /* Main.storyboard */; };
 		FBA302591C8353EA00C63D00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBA302581C8353EA00C63D00 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		71C734D71D37C2D00032FA12 /* Standalone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Standalone.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		71C734D91D37DC380032FA12 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = SOURCE_ROOT; };
+		712F70B51D3B9065005ADC35 /* Standalone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Standalone.plist; sourceTree = "<group>"; };
+		712F70B91D3BBDA6005ADC35 /* Standalone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Standalone.storyboard; sourceTree = "<group>"; };
+		71BEB0CE1D3BD2870098A767 /* AbstractMessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractMessageTableViewController.swift; sourceTree = "<group>"; };
+		71BEB0D11D3BD3E00098A767 /* StandaloneMessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandaloneMessageTableViewController.swift; sourceTree = "<group>"; };
+		71C734D71D37C2D00032FA12 /* Sinenco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sinenco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		814C3AC81B69877600E307BB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		814C3AC91B69877600E307BB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81BA81451A49DA1800E65899 /* Shared News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shared News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,7 +95,7 @@
 		FBA302481C8353D000C63D00 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
 		FBA3024A1C8353D000C63D00 /* ServiceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceTableViewCell.swift; sourceTree = "<group>"; };
 		FBA3024E1C8353D700C63D00 /* ServiceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceTableViewController.swift; sourceTree = "<group>"; };
-		FBA3024F1C8353D700C63D00 /* MessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
+		FBA3024F1C8353D700C63D00 /* SharedMessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedMessageTableViewController.swift; sourceTree = "<group>"; };
 		FBA302561C8353E200C63D00 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		FBA302581C8353EA00C63D00 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,6 +135,7 @@
 		814C3AC51B69877600E307BB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				712F70B51D3B9065005ADC35 /* Standalone.plist */,
 				814C3AC81B69877600E307BB /* Images.xcassets */,
 				814C3AC91B69877600E307BB /* Info.plist */,
 			);
@@ -147,7 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				81BA81451A49DA1800E65899 /* Shared News.app */,
-				71C734D71D37C2D00032FA12 /* Standalone.app */,
+				71C734D71D37C2D00032FA12 /* Sinenco.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -203,6 +212,7 @@
 		FBA3023D1C83534A00C63D00 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				712F70B91D3BBDA6005ADC35 /* Standalone.storyboard */,
 				FBA302581C8353EA00C63D00 /* LaunchScreen.storyboard */,
 				FBA302561C8353E200C63D00 /* Main.storyboard */,
 			);
@@ -240,10 +250,11 @@
 		FBA302411C83537600C63D00 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				71BEB0CE1D3BD2870098A767 /* AbstractMessageTableViewController.swift */,
 				FBA3024E1C8353D700C63D00 /* ServiceTableViewController.swift */,
-				71C734D91D37DC380032FA12 /* Config.xcconfig */,
-				FBA3024F1C8353D700C63D00 /* MessageTableViewController.swift */,
+				FBA3024F1C8353D700C63D00 /* SharedMessageTableViewController.swift */,
 				FB1BCE671C85B129000B5898 /* MessageUIViewController.swift */,
+				71BEB0D11D3BD3E00098A767 /* StandaloneMessageTableViewController.swift */,
 				FB3ADF641CA321FD0002E8BC /* ServiceSearchTableViewController.swift */,
 			);
 			name = Controllers;
@@ -274,12 +285,12 @@
 			);
 			name = Standalone;
 			productName = ParseStarterProject;
-			productReference = 71C734D71D37C2D00032FA12 /* Standalone.app */;
+			productReference = 71C734D71D37C2D00032FA12 /* Sinenco.app */;
 			productType = "com.apple.product-type.application";
 		};
-		81BA81441A49DA1800E65899 /* Shared News */ = {
+		81BA81441A49DA1800E65899 /* Shared */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 81BA81641A49DA1800E65899 /* Build configuration list for PBXNativeTarget "Shared News" */;
+			buildConfigurationList = 81BA81641A49DA1800E65899 /* Build configuration list for PBXNativeTarget "Shared" */;
 			buildPhases = (
 				81BA81411A49DA1800E65899 /* Sources */,
 				81BA81421A49DA1800E65899 /* Frameworks */,
@@ -289,7 +300,7 @@
 			);
 			dependencies = (
 			);
-			name = "Shared News";
+			name = Shared;
 			productName = ParseStarterProject;
 			productReference = 81BA81451A49DA1800E65899 /* Shared News.app */;
 			productType = "com.apple.product-type.application";
@@ -304,6 +315,14 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Parse;
 				TargetAttributes = {
+					71C734B71D37C2D00032FA12 = {
+						DevelopmentTeam = K27GN92373;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
 					81BA81441A49DA1800E65899 = {
 						CreatedOnToolsVersion = 6.1.1;
 						DevelopmentTeam = K27GN92373;
@@ -328,7 +347,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				81BA81441A49DA1800E65899 /* Shared News */,
+				81BA81441A49DA1800E65899 /* Shared */,
 				71C734B71D37C2D00032FA12 /* Standalone */,
 			);
 		};
@@ -339,7 +358,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71C734D11D37C2D00032FA12 /* Main.storyboard in Resources */,
+				712F70BB1D3BC01D005ADC35 /* Standalone.storyboard in Resources */,
 				71C734D21D37C2D00032FA12 /* LaunchScreen.storyboard in Resources */,
 				71C734D31D37C2D00032FA12 /* Images.xcassets in Resources */,
 			);
@@ -352,6 +371,7 @@
 				FBA302571C8353E200C63D00 /* Main.storyboard in Resources */,
 				FBA302591C8353EA00C63D00 /* LaunchScreen.storyboard in Resources */,
 				814C3ACB1B69877600E307BB /* Images.xcassets in Resources */,
+				712F70B61D3B9065005ADC35 /* Standalone.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,11 +385,13 @@
 				71C734B91D37C2D00032FA12 /* DownloadTask.swift in Sources */,
 				71C734BA1D37C2D00032FA12 /* Service.swift in Sources */,
 				71C734BB1D37C2D00032FA12 /* MessageUIViewController.swift in Sources */,
+				71BEB0D01D3BD2870098A767 /* AbstractMessageTableViewController.swift in Sources */,
+				71BEB0D31D3BD3E00098A767 /* StandaloneMessageTableViewController.swift in Sources */,
 				71C734BC1D37C2D00032FA12 /* SharedNews.xcdatamodeld in Sources */,
 				71C734BD1D37C2D00032FA12 /* MessageTableViewCell.swift in Sources */,
 				71C734BE1D37C2D00032FA12 /* ServiceTableViewCell.swift in Sources */,
 				71C734BF1D37C2D00032FA12 /* LocalStoredPFQueryTableViewController.swift in Sources */,
-				71C734C01D37C2D00032FA12 /* MessageTableViewController.swift in Sources */,
+				71C734C01D37C2D00032FA12 /* SharedMessageTableViewController.swift in Sources */,
 				71C734C11D37C2D00032FA12 /* DownloadCallbackFunction.swift in Sources */,
 				71C734C21D37C2D00032FA12 /* ServiceTableViewController.swift in Sources */,
 				71C734C31D37C2D00032FA12 /* Message.swift in Sources */,
@@ -387,11 +409,13 @@
 				FBA3023C1C83532F00C63D00 /* DownloadTask.swift in Sources */,
 				FBA302461C8353CA00C63D00 /* Service.swift in Sources */,
 				FB1BCE681C85B129000B5898 /* MessageUIViewController.swift in Sources */,
+				71BEB0CF1D3BD2870098A767 /* AbstractMessageTableViewController.swift in Sources */,
+				71BEB0D21D3BD3E00098A767 /* StandaloneMessageTableViewController.swift in Sources */,
 				FB601AA01C847C3800837681 /* SharedNews.xcdatamodeld in Sources */,
 				FBA3024B1C8353D000C63D00 /* MessageTableViewCell.swift in Sources */,
 				FBA3024D1C8353D000C63D00 /* ServiceTableViewCell.swift in Sources */,
 				FB2F98971C85A2650058B132 /* LocalStoredPFQueryTableViewController.swift in Sources */,
-				FBA302531C8353D700C63D00 /* MessageTableViewController.swift in Sources */,
+				FBA302531C8353D700C63D00 /* SharedMessageTableViewController.swift in Sources */,
 				FBA3023B1C83532F00C63D00 /* DownloadCallbackFunction.swift in Sources */,
 				FBA302521C8353D700C63D00 /* ServiceTableViewController.swift in Sources */,
 				FBA302451C8353CA00C63D00 /* Message.swift in Sources */,
@@ -410,8 +434,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				BUNDLE_ID = com.sinenco.sinenco;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -421,12 +447,13 @@
 					"$(inherited)",
 					"PARSE_COMPANY=$(PARSE_COMPANY)",
 				);
-				INFOPLIST_FILE = Resources/Info.plist;
+				INFOPLIST_FILE = Resources/Standalone.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PARSE_COMPANY = "\"sinenco_fr\"";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sinenco.sharednews;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "228f054e-341e-4408-a119-021cdc518510";
+				PARSE_COMPANY_ID = JFDC3i55AA;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID)";
+				PRODUCT_NAME = Sinenco;
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -436,19 +463,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				BUNDLE_ID = com.sinenco.sinenco;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = "PARSE_COMPANY=$(PARSE_COMPANY)";
-				INFOPLIST_FILE = Resources/Info.plist;
+				INFOPLIST_FILE = Resources/Standalone.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PARSE_COMPANY = "\"sinenco_fr\"";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sinenco.sharednews;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "7bc8e5ae-e2d3-41b7-82f7-d23dca36c147";
+				PARSE_COMPANY_ID = JFDC3i55AA;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID)";
+				PRODUCT_NAME = Sinenco;
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -472,6 +502,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -519,6 +550,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -558,7 +590,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sinenco.sharednews;
 				PRODUCT_NAME = "Shared News";
-				PROVISIONING_PROFILE = "228f054e-341e-4408-a119-021cdc518510";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -568,8 +600,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -579,7 +611,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sinenco.sharednews;
 				PRODUCT_NAME = "Shared News";
-				PROVISIONING_PROFILE = "7bc8e5ae-e2d3-41b7-82f7-d23dca36c147";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -605,7 +637,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		81BA81641A49DA1800E65899 /* Build configuration list for PBXNativeTarget "Shared News" */ = {
+		81BA81641A49DA1800E65899 /* Build configuration list for PBXNativeTarget "Shared" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				81BA81651A49DA1800E65899 /* Debug */,

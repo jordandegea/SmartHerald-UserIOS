@@ -152,7 +152,7 @@ class ServiceTableViewController: LocalStoredPFQueryTableViewController, PFLogIn
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         if  segue.identifier == "serviceToMessage" {
-            let controller = segue.destinationViewController as! MessageTableViewController
+            let controller = segue.destinationViewController as! SharedMessageTableViewController
             
             //controller.transitioningDelegate = self.animatorController
             

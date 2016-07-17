@@ -1,0 +1,18 @@
+# Purchase a developer account
+
+https://developer.apple.com/
+
+# Connect to itunes
+https://itunesconnect.apple.com/
+
+## Create Production certificate
+
+http://lessons.livecode.com/m/4069/l/32957-how-do-i-create-a-distribution-profile-for-ios
+
+## Create provisionning associated with production certificate
+
+
+
+# Push
+
+## Upload certificate to parse server
