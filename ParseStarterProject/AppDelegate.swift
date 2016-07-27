@@ -49,8 +49,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // PFFacebookUtils.initializeFacebook()
         // ****************************************************************************
 
-        //PFUser.enableAutomaticUser() // NO
-
+        PFUser.enableAutomaticUser();
+        PFUser.enableRevocableSessionInBackground();
+        
         let defaultACL = PFACL();
 
         // If you would like all objects to be private by default, remove this line.

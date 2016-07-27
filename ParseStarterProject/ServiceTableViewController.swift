@@ -57,12 +57,6 @@ class ServiceTableViewController: LocalStoredPFQueryTableViewController, PFLogIn
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        #if DEBUG
-            print("hey sa va")
-            print(PARSE_COMPANY)
-        #else
-            print("coucou salut")
-        #endif
         
         if (( PFUser.currentUser()?.isNew ) == nil){
             showLoginView()
@@ -74,19 +68,21 @@ class ServiceTableViewController: LocalStoredPFQueryTableViewController, PFLogIn
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        noDataText = (NSBundle.mainBundle().objectForInfoDictionaryKey("PARSE_COMPANY") as! String) + "Please subscribe to a service or a company with the add button"
+        noDataText = "Please subscribe to a service or a company with the add button"
         
-        print("did load")
-        print(objects)
         if (( PFUser.currentUser()?.isNew ) == nil){
             showLoginView()
         }else{
+            PFUser.enableRevocableSessionInBackground();
             PFUser.currentUser()?.fetchInBackgroundWithBlock({ (object, error) in
-                print("reload fecth lo")
-                print(object)
-                print(error)
-                self.loadObjects()
-                self.tableView.reloadData()
+                if (error != nil){
+                    print(error)
+                    PFUser.logOut();
+                    self.showLoginView();
+                }else{
+                    self.loadObjects()
+                    self.tableView.reloadData()
+                }
             })
             self.tableView.reloadData()
         }
@@ -139,10 +135,16 @@ class ServiceTableViewController: LocalStoredPFQueryTableViewController, PFLogIn
 
     
     func showLoginView() {
-        let logInViewController = PFLogInViewController()
+        let logInViewController = MyPFLogInViewController()
+        logInViewController.signUpController = MyPFSignUpViewController()
         logInViewController.delegate = self
         //logInViewController.signUpController.delegate = self
-        logInViewController.fields =  [.UsernameAndPassword, .LogInButton, .SignUpButton, .DismissButton, .PasswordForgotten]
+        logInViewController.fields =  [
+            .UsernameAndPassword,
+            .LogInButton,
+            .SignUpButton,
+            .DismissButton,
+            .PasswordForgotten]
         
         self.presentViewController(logInViewController, animated: true, completion: nil)
     }

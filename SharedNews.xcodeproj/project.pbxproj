@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7115F0ED1D4762FD00570678 /* MyPFLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7115F0EC1D4762FD00570678 /* MyPFLogInViewController.swift */; };
+		7115F0EE1D4762FD00570678 /* MyPFLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7115F0EC1D4762FD00570678 /* MyPFLogInViewController.swift */; };
+		7115F0F01D4763BF00570678 /* MyPFSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7115F0EF1D4763BF00570678 /* MyPFSignUpViewController.swift */; };
+		7115F0F11D4763BF00570678 /* MyPFSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7115F0EF1D4763BF00570678 /* MyPFSignUpViewController.swift */; };
 		712F70B61D3B9065005ADC35 /* Standalone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 712F70B51D3B9065005ADC35 /* Standalone.plist */; };
 		712F70BB1D3BC01D005ADC35 /* Standalone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 712F70B91D3BBDA6005ADC35 /* Standalone.storyboard */; };
 		71BEB0CF1D3BD2870098A767 /* AbstractMessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BEB0CE1D3BD2870098A767 /* AbstractMessageTableViewController.swift */; };
@@ -65,6 +69,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7115F0EC1D4762FD00570678 /* MyPFLogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPFLogInViewController.swift; sourceTree = "<group>"; };
+		7115F0EF1D4763BF00570678 /* MyPFSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPFSignUpViewController.swift; sourceTree = "<group>"; };
 		712F70B51D3B9065005ADC35 /* Standalone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Standalone.plist; sourceTree = "<group>"; };
 		712F70B91D3BBDA6005ADC35 /* Standalone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Standalone.storyboard; sourceTree = "<group>"; };
 		71BEB0CE1D3BD2870098A767 /* AbstractMessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractMessageTableViewController.swift; sourceTree = "<group>"; };
@@ -264,6 +270,8 @@
 			isa = PBXGroup;
 			children = (
 				FB2F98961C85A2650058B132 /* LocalStoredPFQueryTableViewController.swift */,
+				7115F0EC1D4762FD00570678 /* MyPFLogInViewController.swift */,
+				7115F0EF1D4763BF00570678 /* MyPFSignUpViewController.swift */,
 			);
 			name = ParseExtension;
 			sourceTree = "<group>";
@@ -382,6 +390,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7115F0EE1D4762FD00570678 /* MyPFLogInViewController.swift in Sources */,
 				71C734B91D37C2D00032FA12 /* DownloadTask.swift in Sources */,
 				71C734BA1D37C2D00032FA12 /* Service.swift in Sources */,
 				71C734BB1D37C2D00032FA12 /* MessageUIViewController.swift in Sources */,
@@ -393,6 +402,7 @@
 				71C734BF1D37C2D00032FA12 /* LocalStoredPFQueryTableViewController.swift in Sources */,
 				71C734C01D37C2D00032FA12 /* SharedMessageTableViewController.swift in Sources */,
 				71C734C11D37C2D00032FA12 /* DownloadCallbackFunction.swift in Sources */,
+				7115F0F11D4763BF00570678 /* MyPFSignUpViewController.swift in Sources */,
 				71C734C21D37C2D00032FA12 /* ServiceTableViewController.swift in Sources */,
 				71C734C31D37C2D00032FA12 /* Message.swift in Sources */,
 				71C734C41D37C2D00032FA12 /* ServiceSearchTableViewController.swift in Sources */,
@@ -406,6 +416,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7115F0ED1D4762FD00570678 /* MyPFLogInViewController.swift in Sources */,
 				FBA3023C1C83532F00C63D00 /* DownloadTask.swift in Sources */,
 				FBA302461C8353CA00C63D00 /* Service.swift in Sources */,
 				FB1BCE681C85B129000B5898 /* MessageUIViewController.swift in Sources */,
@@ -417,6 +428,7 @@
 				FB2F98971C85A2650058B132 /* LocalStoredPFQueryTableViewController.swift in Sources */,
 				FBA302531C8353D700C63D00 /* SharedMessageTableViewController.swift in Sources */,
 				FBA3023B1C83532F00C63D00 /* DownloadCallbackFunction.swift in Sources */,
+				7115F0F01D4763BF00570678 /* MyPFSignUpViewController.swift in Sources */,
 				FBA302521C8353D700C63D00 /* ServiceTableViewController.swift in Sources */,
 				FBA302451C8353CA00C63D00 /* Message.swift in Sources */,
 				FB3ADF651CA321FD0002E8BC /* ServiceSearchTableViewController.swift in Sources */,
