@@ -78,7 +78,7 @@
 		71C734D71D37C2D00032FA12 /* Sinenco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sinenco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		814C3AC81B69877600E307BB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		814C3AC91B69877600E307BB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		81BA81451A49DA1800E65899 /* Shared News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shared News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81BA81451A49DA1800E65899 /* Smart Herald.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart Herald.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81BA814A1A49DA1800E65899 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81BA816B1A49DB6800E65899 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		81BA816C1A49DB6800E65899 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
@@ -151,7 +151,7 @@
 		81BA813C1A49DA1800E65899 = {
 			isa = PBXGroup;
 			children = (
-				81BA81471A49DA1800E65899 /* SharedNews */,
+				81BA81471A49DA1800E65899 /* Smart Herald */,
 				814C3AC51B69877600E307BB /* Resources */,
 				81BA816A1A49DB5600E65899 /* Frameworks */,
 				81BA81461A49DA1800E65899 /* Products */,
@@ -161,13 +161,13 @@
 		81BA81461A49DA1800E65899 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				81BA81451A49DA1800E65899 /* Shared News.app */,
+				81BA81451A49DA1800E65899 /* Smart Herald.app */,
 				71C734D71D37C2D00032FA12 /* Sinenco.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		81BA81471A49DA1800E65899 /* SharedNews */ = {
+		81BA81471A49DA1800E65899 /* Smart Herald */ = {
 			isa = PBXGroup;
 			children = (
 				FBC5EC4A1C85A126006D5441 /* ParseExtension */,
@@ -178,7 +178,7 @@
 				FBA3023D1C83534A00C63D00 /* Storyboards */,
 				FBA302361C83532300C63D00 /* API */,
 			);
-			name = SharedNews;
+			name = "Smart Herald";
 			path = ParseStarterProject;
 			sourceTree = "<group>";
 		};
@@ -310,7 +310,7 @@
 			);
 			name = Shared;
 			productName = ParseStarterProject;
-			productReference = 81BA81451A49DA1800E65899 /* Shared News.app */;
+			productReference = 81BA81451A49DA1800E65899 /* Smart Herald.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -342,7 +342,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 81BA81401A49DA1800E65899 /* Build configuration list for PBXProject "SharedNews" */;
+			buildConfigurationList = 81BA81401A49DA1800E65899 /* Build configuration list for PBXProject "Smart Herald" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -600,8 +600,8 @@
 				);
 				INFOPLIST_FILE = Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sinenco.sharednews;
-				PRODUCT_NAME = "Shared News";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sinenco.smartherald;
+				PRODUCT_NAME = "Smart Herald";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -621,8 +621,8 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "";
 				INFOPLIST_FILE = Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sinenco.sharednews;
-				PRODUCT_NAME = "Shared News";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sinenco.smartherald;
+				PRODUCT_NAME = "Smart Herald";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -640,7 +640,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		81BA81401A49DA1800E65899 /* Build configuration list for PBXProject "SharedNews" */ = {
+		81BA81401A49DA1800E65899 /* Build configuration list for PBXProject "Smart Herald" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				81BA81621A49DA1800E65899 /* Debug */,

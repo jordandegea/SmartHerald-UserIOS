@@ -17,7 +17,7 @@
                BlueprintIdentifier = "71C734B71D37C2D00032FA12"
                BuildableName = "Sinenco.app"
                BlueprintName = "Standalone"
-               ReferencedContainer = "container:SharedNews.xcodeproj">
+               ReferencedContainer = "container:Smart Herald.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -49,7 +49,7 @@
             BlueprintIdentifier = "71C734B71D37C2D00032FA12"
             BuildableName = "Sinenco.app"
             BlueprintName = "Standalone"
-            ReferencedContainer = "container:SharedNews.xcodeproj">
+            ReferencedContainer = "container:Smart Herald.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -67,7 +67,7 @@
             BlueprintIdentifier = "71C734B71D37C2D00032FA12"
             BuildableName = "Sinenco.app"
             BlueprintName = "Standalone"
-            ReferencedContainer = "container:SharedNews.xcodeproj">
+            ReferencedContainer = "container:Smart Herald.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

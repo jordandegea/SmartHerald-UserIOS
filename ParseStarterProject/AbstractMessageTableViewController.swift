@@ -1,6 +1,6 @@
 //
 //  AbstractMessageTableViewController.swift
-//  SharedNews
+//  Smart Herald
 //
 //  Created by Jordan DE GEA on 17/07/2016.
 //  Copyright © 2016 Parse. All rights reserved.

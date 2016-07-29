@@ -36,9 +36,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let config = ParseClientConfiguration(block: {
             (ParseMutableClientConfiguration) -> Void in
             ParseMutableClientConfiguration.localDatastoreEnabled = true;
-            ParseMutableClientConfiguration.applicationId = "com.sinenco.sharednews";
-            ParseMutableClientConfiguration.clientKey = "com.sinenco.sharednews";
-            ParseMutableClientConfiguration.server = "http://prod.shared-news.com/parse";
+            ParseMutableClientConfiguration.applicationId = "com.sinenco.smartherald";
+            ParseMutableClientConfiguration.clientKey = "com.sinenco.smartherald";
+            ParseMutableClientConfiguration.server = "http://smartherald.com/parse";
         });
         
         Parse.initializeWithConfiguration(config);
@@ -123,9 +123,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         PFPush.subscribeToChannelInBackground("") { (succeeded: Bool, error: NSError?) in
             if succeeded {
-                print("SharedNews successfully subscribed to push notifications on the broadcast channel.\n");
+                print("Smart Herald successfully subscribed to push notifications on the broadcast channel.\n");
             } else {
-                print("SharedNews failed to subscribe to push notifications on the broadcast channel with error = %@.\n", error)
+                print("Smart Herald failed to subscribe to push notifications on the broadcast channel with error = %@.\n", error)
             }
         }
     }
@@ -150,14 +150,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: - Core Data stack
     
     lazy var applicationDocumentsDirectory: NSURL = {
-        // The directory the application uses to store the Core Data store file. This code uses a directory named "com.sinenco.SharedNews" in the application's documents Application Support directory.
+        // The directory the application uses to store the Core Data store file. This code uses a directory named "Smart Herald" in the application's documents Application Support directory.
         let urls = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
         return urls[urls.count-1]
     }()
     
     lazy var managedObjectModel: NSManagedObjectModel = {
         // The managed object model for the application. This property is not optional. It is a fatal error for the application not to be able to find and load its model.
-        let modelURL = NSBundle.mainBundle().URLForResource("SharedNews", withExtension: "momd")!
+        let modelURL = NSBundle.mainBundle().URLForResource("Smart Herald", withExtension: "momd")!
         return NSManagedObjectModel(contentsOfURL: modelURL)!
     }()
     

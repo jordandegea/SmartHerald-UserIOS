@@ -1,6 +1,6 @@
 //
 //  Service.swift
-//  SharedNews
+//  SmartHerald
 //
 //  Created by Jordan DE GEA on 22/02/2016.
 //  Copyright © 2016 Jordan DE GEA. All rights reserved.

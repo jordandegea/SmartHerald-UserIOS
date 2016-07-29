@@ -1,6 +1,6 @@
 //
 //  ServiceSearchTableViewController.swift
-//  SharedNews
+//  Smart Herald
 //
 //  Created by Jordan DE GEA on 23/03/2016.
 //  Copyright © 2016 Parse. All rights reserved.
