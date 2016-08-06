@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7106078B1D54FA7500CB2E00 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7106078A1D54FA7500CB2E00 /* AccountViewController.swift */; };
+		7106078C1D54FA7500CB2E00 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7106078A1D54FA7500CB2E00 /* AccountViewController.swift */; };
+		7106078E1D552E8B00CB2E00 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7106078D1D552E8B00CB2E00 /* TutorialViewController.swift */; };
+		7106078F1D55376300CB2E00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 710607911D55376300CB2E00 /* Main.storyboard */; };
+		710607981D55391800CB2E00 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7106079A1D55391800CB2E00 /* Localizable.strings */; };
+		710607A11D55D2BA00CB2E00 /* Tutorial1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710607A01D55D2BA00CB2E00 /* Tutorial1ViewController.swift */; };
+		710607A91D55D90600CB2E00 /* cheap_diagonal_fabric.png in Resources */ = {isa = PBXBuildFile; fileRef = 710607A41D55D90600CB2E00 /* cheap_diagonal_fabric.png */; };
+		710607AA1D55D90600CB2E00 /* confectionary.png in Resources */ = {isa = PBXBuildFile; fileRef = 710607A51D55D90600CB2E00 /* confectionary.png */; };
+		710607AB1D55D90600CB2E00 /* pink_rice.png in Resources */ = {isa = PBXBuildFile; fileRef = 710607A61D55D90600CB2E00 /* pink_rice.png */; };
+		710607AC1D55D90600CB2E00 /* subtle_white_mini_waves.png in Resources */ = {isa = PBXBuildFile; fileRef = 710607A71D55D90600CB2E00 /* subtle_white_mini_waves.png */; };
+		710607AF1D55E66C00CB2E00 /* Tutorial2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710607AE1D55E66C00CB2E00 /* Tutorial2ViewController.swift */; };
+		710607B11D55E67600CB2E00 /* Tutorial3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710607B01D55E67600CB2E00 /* Tutorial3ViewController.swift */; };
 		7115F0ED1D4762FD00570678 /* MyPFLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7115F0EC1D4762FD00570678 /* MyPFLogInViewController.swift */; };
 		7115F0EE1D4762FD00570678 /* MyPFLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7115F0EC1D4762FD00570678 /* MyPFLogInViewController.swift */; };
 		7115F0F01D4763BF00570678 /* MyPFSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7115F0EF1D4763BF00570678 /* MyPFSignUpViewController.swift */; };
@@ -64,11 +76,24 @@
 		FBA3024D1C8353D000C63D00 /* ServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA3024A1C8353D000C63D00 /* ServiceTableViewCell.swift */; };
 		FBA302521C8353D700C63D00 /* ServiceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA3024E1C8353D700C63D00 /* ServiceTableViewController.swift */; };
 		FBA302531C8353D700C63D00 /* SharedMessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA3024F1C8353D700C63D00 /* SharedMessageTableViewController.swift */; };
-		FBA302571C8353E200C63D00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBA302561C8353E200C63D00 /* Main.storyboard */; };
 		FBA302591C8353EA00C63D00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBA302581C8353EA00C63D00 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7106078A1D54FA7500CB2E00 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		7106078D1D552E8B00CB2E00 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		710607921D55376E00CB2E00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		710607951D55383200CB2E00 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		710607991D55391800CB2E00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7106079C1D55392500CB2E00 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7106079E1D55C9D900CB2E00 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		710607A01D55D2BA00CB2E00 /* Tutorial1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial1ViewController.swift; sourceTree = "<group>"; };
+		710607A41D55D90600CB2E00 /* cheap_diagonal_fabric.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cheap_diagonal_fabric.png; path = patterns/cheap_diagonal_fabric.png; sourceTree = "<group>"; };
+		710607A51D55D90600CB2E00 /* confectionary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = confectionary.png; path = patterns/confectionary.png; sourceTree = "<group>"; };
+		710607A61D55D90600CB2E00 /* pink_rice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pink_rice.png; path = patterns/pink_rice.png; sourceTree = "<group>"; };
+		710607A71D55D90600CB2E00 /* subtle_white_mini_waves.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = subtle_white_mini_waves.png; path = patterns/subtle_white_mini_waves.png; sourceTree = "<group>"; };
+		710607AE1D55E66C00CB2E00 /* Tutorial2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial2ViewController.swift; sourceTree = "<group>"; };
+		710607B01D55E67600CB2E00 /* Tutorial3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial3ViewController.swift; sourceTree = "<group>"; };
 		7115F0EC1D4762FD00570678 /* MyPFLogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPFLogInViewController.swift; sourceTree = "<group>"; };
 		7115F0EF1D4763BF00570678 /* MyPFSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPFSignUpViewController.swift; sourceTree = "<group>"; };
 		712F70B51D3B9065005ADC35 /* Standalone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Standalone.plist; sourceTree = "<group>"; };
@@ -102,7 +127,6 @@
 		FBA3024A1C8353D000C63D00 /* ServiceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceTableViewCell.swift; sourceTree = "<group>"; };
 		FBA3024E1C8353D700C63D00 /* ServiceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceTableViewController.swift; sourceTree = "<group>"; };
 		FBA3024F1C8353D700C63D00 /* SharedMessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedMessageTableViewController.swift; sourceTree = "<group>"; };
-		FBA302561C8353E200C63D00 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		FBA302581C8353EA00C63D00 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,9 +162,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7106079F1D55D29F00CB2E00 /* Tutorials */ = {
+			isa = PBXGroup;
+			children = (
+				710607A01D55D2BA00CB2E00 /* Tutorial1ViewController.swift */,
+				710607AE1D55E66C00CB2E00 /* Tutorial2ViewController.swift */,
+				710607B01D55E67600CB2E00 /* Tutorial3ViewController.swift */,
+			);
+			name = Tutorials;
+			sourceTree = "<group>";
+		};
 		814C3AC51B69877600E307BB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				710607A41D55D90600CB2E00 /* cheap_diagonal_fabric.png */,
+				710607A51D55D90600CB2E00 /* confectionary.png */,
+				710607A61D55D90600CB2E00 /* pink_rice.png */,
+				710607A71D55D90600CB2E00 /* subtle_white_mini_waves.png */,
 				712F70B51D3B9065005ADC35 /* Standalone.plist */,
 				814C3AC81B69877600E307BB /* Images.xcassets */,
 				814C3AC91B69877600E307BB /* Info.plist */,
@@ -177,6 +215,7 @@
 				FBA3023E1C83535500C63D00 /* App */,
 				FBA3023D1C83534A00C63D00 /* Storyboards */,
 				FBA302361C83532300C63D00 /* API */,
+				7106079A1D55391800CB2E00 /* Localizable.strings */,
 			);
 			name = "Smart Herald";
 			path = ParseStarterProject;
@@ -220,7 +259,7 @@
 			children = (
 				712F70B91D3BBDA6005ADC35 /* Standalone.storyboard */,
 				FBA302581C8353EA00C63D00 /* LaunchScreen.storyboard */,
-				FBA302561C8353E200C63D00 /* Main.storyboard */,
+				710607911D55376300CB2E00 /* Main.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -256,12 +295,15 @@
 		FBA302411C83537600C63D00 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				7106079F1D55D29F00CB2E00 /* Tutorials */,
 				71BEB0CE1D3BD2870098A767 /* AbstractMessageTableViewController.swift */,
 				FBA3024E1C8353D700C63D00 /* ServiceTableViewController.swift */,
 				FBA3024F1C8353D700C63D00 /* SharedMessageTableViewController.swift */,
 				FB1BCE671C85B129000B5898 /* MessageUIViewController.swift */,
 				71BEB0D11D3BD3E00098A767 /* StandaloneMessageTableViewController.swift */,
 				FB3ADF641CA321FD0002E8BC /* ServiceSearchTableViewController.swift */,
+				7106078A1D54FA7500CB2E00 /* AccountViewController.swift */,
+				7106078D1D552E8B00CB2E00 /* TutorialViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -349,6 +391,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 81BA813C1A49DA1800E65899;
 			productRefGroup = 81BA81461A49DA1800E65899 /* Products */;
@@ -376,7 +419,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBA302571C8353E200C63D00 /* Main.storyboard in Resources */,
+				710607AC1D55D90600CB2E00 /* subtle_white_mini_waves.png in Resources */,
+				710607981D55391800CB2E00 /* Localizable.strings in Resources */,
+				710607A91D55D90600CB2E00 /* cheap_diagonal_fabric.png in Resources */,
+				710607AA1D55D90600CB2E00 /* confectionary.png in Resources */,
+				7106078F1D55376300CB2E00 /* Main.storyboard in Resources */,
+				710607AB1D55D90600CB2E00 /* pink_rice.png in Resources */,
 				FBA302591C8353EA00C63D00 /* LaunchScreen.storyboard in Resources */,
 				814C3ACB1B69877600E307BB /* Images.xcassets in Resources */,
 				712F70B61D3B9065005ADC35 /* Standalone.plist in Resources */,
@@ -396,6 +444,7 @@
 				71C734BB1D37C2D00032FA12 /* MessageUIViewController.swift in Sources */,
 				71BEB0D01D3BD2870098A767 /* AbstractMessageTableViewController.swift in Sources */,
 				71BEB0D31D3BD3E00098A767 /* StandaloneMessageTableViewController.swift in Sources */,
+				7106078C1D54FA7500CB2E00 /* AccountViewController.swift in Sources */,
 				71C734BC1D37C2D00032FA12 /* SharedNews.xcdatamodeld in Sources */,
 				71C734BD1D37C2D00032FA12 /* MessageTableViewCell.swift in Sources */,
 				71C734BE1D37C2D00032FA12 /* ServiceTableViewCell.swift in Sources */,
@@ -417,11 +466,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				7115F0ED1D4762FD00570678 /* MyPFLogInViewController.swift in Sources */,
+				7106078E1D552E8B00CB2E00 /* TutorialViewController.swift in Sources */,
 				FBA3023C1C83532F00C63D00 /* DownloadTask.swift in Sources */,
 				FBA302461C8353CA00C63D00 /* Service.swift in Sources */,
 				FB1BCE681C85B129000B5898 /* MessageUIViewController.swift in Sources */,
 				71BEB0CF1D3BD2870098A767 /* AbstractMessageTableViewController.swift in Sources */,
+				710607A11D55D2BA00CB2E00 /* Tutorial1ViewController.swift in Sources */,
 				71BEB0D21D3BD3E00098A767 /* StandaloneMessageTableViewController.swift in Sources */,
+				7106078B1D54FA7500CB2E00 /* AccountViewController.swift in Sources */,
+				710607AF1D55E66C00CB2E00 /* Tutorial2ViewController.swift in Sources */,
 				FB601AA01C847C3800837681 /* SharedNews.xcdatamodeld in Sources */,
 				FBA3024B1C8353D000C63D00 /* MessageTableViewCell.swift in Sources */,
 				FBA3024D1C8353D000C63D00 /* ServiceTableViewCell.swift in Sources */,
@@ -434,11 +487,34 @@
 				FB3ADF651CA321FD0002E8BC /* ServiceSearchTableViewController.swift in Sources */,
 				FBA3023A1C83532F00C63D00 /* Commands.swift in Sources */,
 				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
+				710607B11D55E67600CB2E00 /* Tutorial3ViewController.swift in Sources */,
 				FB3ADF671CA32E330002E8BC /* ServiceSearchTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		710607911D55376300CB2E00 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				710607921D55376E00CB2E00 /* Base */,
+				710607951D55383200CB2E00 /* en */,
+				7106079E1D55C9D900CB2E00 /* fr */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7106079A1D55391800CB2E00 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				710607991D55391800CB2E00 /* Base */,
+				7106079C1D55392500CB2E00 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		71C734D51D37C2D00032FA12 /* Debug */ = {

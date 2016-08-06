@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  Smart Herald
+
+  Created by Jordan DE GEA on 05/08/2016.
+  Copyright © 2016 Parse. All rights reserved.
+*/
+TOTURIAL__PAGE_1_CONTENT="Voici quelques explications sur le fonctionnement de cette application. \n\n\nSmart Herald est une application regroupant quelques entreprises. \n\nVous avez surement téléchargé cette application à la demande d'une entreprise. \n\n\nGlissez vers la gauche pour la suite";
+
+TOTURIAL__PAGE_2_CONTENT="Sur l'écran d'accueil, vous avez un bouton +. Grâce à ce bouton, vous accédez à la page de recherche sur laquelle vous pouvez chercher l'entreprise que vous voulez suivre. \n\n\nGlissez vers la gauche pour la suite";
+
+TOTURIAL__PAGE_3_CONTENT="Vous pouvez vous connecter en temps qu'anonyme ou bien utiliser un compte. \n\nL'avantage de posséder un compte est que vous pouvez gérer votre compte et lire les nouveautés sur plusieurs équipements. Que ce soit sur ordinateur, tablettes ou smartphones. \n\n\nFermez cette fenêtre pour choisir votre type compte. ";

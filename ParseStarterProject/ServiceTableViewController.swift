@@ -24,18 +24,12 @@ extension UIImage {
     }
 }
 
-class ServiceTableViewController: LocalStoredPFQueryTableViewController, PFLogInViewControllerDelegate {
+class ServiceTableViewController: LocalStoredPFQueryTableViewController{
 
     // MARK: Properties
     
     var currentIndexSelected : NSIndexPath!
     
-    // MARK : Outlets 
-
-    @IBAction func onLogoutAction(sender: AnyObject) {
-        PFUser.logOut()
-        showLoginView()
-    }
     
     // MARK : Parse Main Query
     
@@ -58,34 +52,38 @@ class ServiceTableViewController: LocalStoredPFQueryTableViewController, PFLogIn
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        if (( PFUser.currentUser()?.isNew ) == nil){
-            showLoginView()
-        }else{
-            self.loadObjects()
-            self.tableView.reloadData()
+        if (isUserNotCreated()){
+            self.performSegueWithIdentifier("serviceToAccount", sender: self)
+            return;
         }
+        
+        self.loadObjects()
+        self.tableView.reloadData()
+        
     }
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         noDataText = "Please subscribe to a service or a company with the add button"
         
-        if (( PFUser.currentUser()?.isNew ) == nil){
-            showLoginView()
-        }else{
-            PFUser.enableRevocableSessionInBackground();
-            PFUser.currentUser()?.fetchInBackgroundWithBlock({ (object, error) in
-                if (error != nil){
-                    print(error)
-                    PFUser.logOut();
-                    self.showLoginView();
-                }else{
-                    self.loadObjects()
-                    self.tableView.reloadData()
-                }
-            })
-            self.tableView.reloadData()
+        if (isUserNotCreated()){
+            //self.performSegueWithIdentifier("serviceToAccount", sender: self)
+            return;
         }
+        
+        PFUser.enableRevocableSessionInBackground();
+        PFUser.currentUser()?.fetchInBackgroundWithBlock({ (object, error) in
+            if (error != nil){
+                PFUser.logOut();
+                self.performSegueWithIdentifier("serviceToAccount", sender: self)
+            }else{
+                self.loadObjects()
+                self.tableView.reloadData()
+            }
+        })
+        self.tableView.reloadData()
+        
     }
     
     // MARK: - Table view data source
@@ -113,42 +111,7 @@ class ServiceTableViewController: LocalStoredPFQueryTableViewController, PFLogIn
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 80;
     }
-    
-    
-    // MARK : PFUser LogIn Methods */
-    
-    @objc func logInViewController(logInController: PFLogInViewController, didLogInUser user: PFUser) {
-        dismissViewControllerAnimated(true, completion: nil)
-        self.loadObjects()
-        self.tableView.reloadData()
-        if ( PFUser.currentUser() != nil){
-            let installation = PFInstallation.currentInstallation()
-            installation.setValue(PFUser.currentUser(), forKey: "user")
-            installation.saveInBackground()
-            PFCloud.callFunctionInBackground(
-                "update_installation",
-                withParameters: [
-                    "installationId":PFInstallation.currentInstallation().objectId!,
-            ])
-        }
-    }
-
-    
-    func showLoginView() {
-        let logInViewController = MyPFLogInViewController()
-        logInViewController.signUpController = MyPFSignUpViewController()
-        logInViewController.delegate = self
-        //logInViewController.signUpController.delegate = self
-        logInViewController.fields =  [
-            .UsernameAndPassword,
-            .LogInButton,
-            .SignUpButton,
-            .DismissButton,
-            .PasswordForgotten]
         
-        self.presentViewController(logInViewController, animated: true, completion: nil)
-    }
-    
     // MARK : Transitions functions
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -165,6 +128,17 @@ class ServiceTableViewController: LocalStoredPFQueryTableViewController, PFLogIn
             
             controller.service = self.objectAtIndexPath(indexPath)!["service"] as? PFObject
             //controller.delegate = self
+        }else if  segue.identifier == "serviceToAccount" {
+            let controller = segue.destinationViewController as! AccountViewController
+            
+            //controller.transitioningDelegate = self.animatorController
+            
+            if(isUserNotCreated()){
+                controller.tutorial = true;
+            }else{
+                controller.tutorial = false;
+            }
+            //controller.delegate = self
         }
     }
 
@@ -172,5 +146,14 @@ class ServiceTableViewController: LocalStoredPFQueryTableViewController, PFLogIn
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+}
+
+extension ServiceTableViewController{
+    func isUserNotCreated() -> Bool{
+        if ( PFUser.currentUser() == nil){
+            return true;
+        }
+        return false;
     }
 }

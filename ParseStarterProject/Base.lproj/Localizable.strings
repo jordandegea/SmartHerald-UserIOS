@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  Smart Herald
+
+  Created by Jordan DE GEA on 05/08/2016.
+  Copyright © 2016 Parse. All rights reserved.
+*/
+TOTURIAL__PAGE_1_CONTENT="Here are some explanations about this application. \n\n\nSmart Herald is an application involving a few companies. \n\nYou have probably downloaded this application at the request of a company. \n\n\nSwipe left to continue";
+
+TOTURIAL__PAGE_2_CONTENT="On the Home screen, you have a button \"+\" . With this button, you access the search page you can find the company you want to follow . \n\n\nSwipe left to continue";
+
+TOTURIAL__PAGE_3_CONTENT="You can create an account or log in as Anonymous account. \n\n\nThe benefit of the account is that you can manage your account and read the news on multiple devices. Whether on computers, tablets or smartphones. \n\n\nPlease close this window to select your account.";

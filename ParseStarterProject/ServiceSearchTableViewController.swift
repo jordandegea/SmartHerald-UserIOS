@@ -99,7 +99,9 @@ class ServiceSearchTableViewController: LocalStoredPFQueryTableViewController, U
         let service:PFObject =  objectAtIndexPath(indexPath)!  ;
         
         let selfP = self ;
-        
+        print(PFUser.currentUser()?.sessionToken);
+        print(service);
+        print(service.objectId);
         PFCloud.callFunctionInBackground(
             "subscribe",
             withParameters: [

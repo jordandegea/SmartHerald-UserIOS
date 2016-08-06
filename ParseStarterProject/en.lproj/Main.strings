@@ -1,0 +1,55 @@
+
+
+/* Class = "UILabel"; text = "Username"; ObjectID = "5Mq-6w-3fC"; Note = "MyAccountPage_Username"; */
+"5Mq-6w-3fC.text" = "Username";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "5Tq-XZ-mVu"; */
+"5Tq-XZ-mVu.text" = "Label";
+
+/* Class = "UISearchBar"; placeholder = "Require 2 characters or more"; ObjectID = "EgH-AU-Kqn"; */
+"EgH-AU-Kqn.placeholder" = "Require 2 characters or more";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "J0a-DB-eCC"; */
+"J0a-DB-eCC.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "My Account"; ObjectID = "Mgc-qX-eAp"; */
+"Mgc-qX-eAp.title" = "My Account";
+
+/* Class = "UILabel"; text = "Contenu"; ObjectID = "Nsu-aJ-uuW"; */
+"Nsu-aJ-uuW.text" = "Contenu";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "Uwf-ra-VZQ"; */
+"Uwf-ra-VZQ.text" = "Email";
+
+/* Class = "UILabel"; text = "Titre"; ObjectID = "Y9m-ci-zIJ"; */
+"Y9m-ci-zIJ.text" = "Introduction";
+
+/* Class = "UIButton"; normalTitle = "Log In"; ObjectID = "YsY-lL-iWK"; */
+"YsY-lL-iWK.normalTitle" = "Log In";
+
+/* Class = "UIBarButtonItem"; title = "Account"; ObjectID = "ZGd-dc-qk1"; */
+"ZGd-dc-qk1.title" = "Account";
+
+/* Class = "UINavigationItem"; title = "Search"; ObjectID = "eib-U8-O4i"; */
+"eib-U8-O4i.title" = "Search";
+
+/* Class = "UIBarButtonItem"; title = "?"; ObjectID = "gIj-WS-kqQ"; */
+"gIj-WS-kqQ.title" = "?";
+
+/* Class = "UINavigationItem"; title = "Messages"; ObjectID = "gpu-pK-h7t"; */
+"gpu-pK-h7t.title" = "Messages";
+
+/* Class = "UIBarButtonItem"; title = "Services"; ObjectID = "hCZ-1O-Hfz"; */
+"hCZ-1O-Hfz.title" = "Services";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ljt-SI-anW"; */
+"ljt-SI-anW.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "pjz-x9-qvW"; */
+"pjz-x9-qvW.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Sign Up"; ObjectID = "t8w-ZX-cSM"; */
+"t8w-ZX-cSM.normalTitle" = "Sign Up";
+
+/* Class = "UINavigationItem"; title = "Services"; ObjectID = "urV-X7-YGh"; */
+"urV-X7-YGh.title" = "Services";
