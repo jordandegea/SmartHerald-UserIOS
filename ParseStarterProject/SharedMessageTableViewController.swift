@@ -23,6 +23,7 @@ class SharedMessageTableViewController: AbstractMessageTableViewController {
         let query = PFQuery(className: "Message")
         query.whereKey("service", equalTo: (service)!)
         query.whereKey("sent", equalTo: true)
+        query.orderByDescending("updatedAt")
         //query.orderByAscending(MyOtherKey)
         return query
     }
