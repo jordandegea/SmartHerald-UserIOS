@@ -19,11 +19,22 @@ class MessageUIViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        if ( message?.valueForKey("content") == nil){
+        
+        var content = message?.valueForKey("content");
+                if ( content == nil){
             navigationController?.popViewControllerAnimated(true)
         }else{
+                    
+            content = content?.stringByReplacingOccurrencesOfString("{$js_jquery}", withString:"http://code.jquery.com/jquery-3.1.1.min.js");
+            content = content?.stringByReplacingOccurrencesOfString("{$bootswatch_cerulean}", withString:"https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/cerulean/bootstrap.min.css");
+            content = content?.stringByReplacingOccurrencesOfString("{$js_jquery3.1.1}", withString:"http://code.jquery.com/jquery-3.1.1.min.js");
+            content = content?.stringByReplacingOccurrencesOfString("{$bootstrap}", withString:"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+            content = content?.stringByReplacingOccurrencesOfString("{$js_bootstrap}", withString:"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js");
+                    
+
+                    
             webView.loadHTMLString(
-                (message?.valueForKey("content"))! as! String,
+                (content)! as! String,
                 baseURL: nil)
         }
     }
