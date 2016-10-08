@@ -1,0 +1,13 @@
+//
+//  Config.xcconfig
+//  Smart Herald
+//
+//  Created by Jordan DE GEA on 14/07/2016.
+//  Copyright © 2016 Parse. All rights reserved.
+//
+
+BUNDLE_ID=com.sinenco.smartherald
+PRODUCT_NAME=Smart Herald
+
+CODE_SIGN_IDENTITY=iPhone Distribution: Jordan DE GEA (K27GN92373)
+PROVISIONING_PROFILE=a3c7f983-cd26-4816-8f2a-0a1d6a22b13b

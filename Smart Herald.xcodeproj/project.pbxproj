@@ -25,6 +25,8 @@
 		7115F0F11D4763BF00570678 /* MyPFSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7115F0EF1D4763BF00570678 /* MyPFSignUpViewController.swift */; };
 		712F70B61D3B9065005ADC35 /* Standalone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 712F70B51D3B9065005ADC35 /* Standalone.plist */; };
 		712F70BB1D3BC01D005ADC35 /* Standalone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 712F70B91D3BBDA6005ADC35 /* Standalone.storyboard */; };
+		71BA9EDC1DA80E0800F3DF5D /* SimpleLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BA9EDB1DA80E0800F3DF5D /* SimpleLoader.swift */; };
+		71BA9EDD1DA80E0800F3DF5D /* SimpleLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BA9EDB1DA80E0800F3DF5D /* SimpleLoader.swift */; };
 		71BEB0CF1D3BD2870098A767 /* AbstractMessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BEB0CE1D3BD2870098A767 /* AbstractMessageTableViewController.swift */; };
 		71BEB0D01D3BD2870098A767 /* AbstractMessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BEB0CE1D3BD2870098A767 /* AbstractMessageTableViewController.swift */; };
 		71BEB0D21D3BD3E00098A767 /* StandaloneMessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BEB0D11D3BD3E00098A767 /* StandaloneMessageTableViewController.swift */; };
@@ -53,6 +55,8 @@
 		71C734CF1D37C2D00032FA12 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA816B1A49DB6800E65899 /* Bolts.framework */; };
 		71C734D21D37C2D00032FA12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBA302581C8353EA00C63D00 /* LaunchScreen.storyboard */; };
 		71C734D31D37C2D00032FA12 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814C3AC81B69877600E307BB /* Images.xcassets */; };
+		71CB9F6B1DA95EE900AC89D2 /* SimpleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CB9F6A1DA95EE900AC89D2 /* SimpleButton.swift */; };
+		71CB9F6C1DA95EE900AC89D2 /* SimpleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CB9F6A1DA95EE900AC89D2 /* SimpleButton.swift */; };
 		814C3ACB1B69877600E307BB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814C3AC81B69877600E307BB /* Images.xcassets */; };
 		81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA814A1A49DA1800E65899 /* AppDelegate.swift */; };
 		81BA81701A49DB6800E65899 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA816B1A49DB6800E65899 /* Bolts.framework */; };
@@ -98,9 +102,11 @@
 		7115F0EF1D4763BF00570678 /* MyPFSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPFSignUpViewController.swift; sourceTree = "<group>"; };
 		712F70B51D3B9065005ADC35 /* Standalone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Standalone.plist; sourceTree = "<group>"; };
 		712F70B91D3BBDA6005ADC35 /* Standalone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Standalone.storyboard; sourceTree = "<group>"; };
+		71BA9EDB1DA80E0800F3DF5D /* SimpleLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleLoader.swift; sourceTree = "<group>"; };
 		71BEB0CE1D3BD2870098A767 /* AbstractMessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractMessageTableViewController.swift; sourceTree = "<group>"; };
 		71BEB0D11D3BD3E00098A767 /* StandaloneMessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandaloneMessageTableViewController.swift; sourceTree = "<group>"; };
 		71C734D71D37C2D00032FA12 /* Sinenco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sinenco.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71CB9F6A1DA95EE900AC89D2 /* SimpleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleButton.swift; sourceTree = "<group>"; };
 		814C3AC81B69877600E307BB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		814C3AC91B69877600E307BB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81BA81451A49DA1800E65899 /* Smart Herald.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart Herald.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,6 +178,22 @@
 			name = Tutorials;
 			sourceTree = "<group>";
 		};
+		71BA9EDA1DA80DED00F3DF5D /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				71BA9EDB1DA80E0800F3DF5D /* SimpleLoader.swift */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		71CB9F691DA95EC300AC89D2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				71CB9F6A1DA95EE900AC89D2 /* SimpleButton.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
 		814C3AC51B69877600E307BB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +230,8 @@
 		81BA81471A49DA1800E65899 /* Smart Herald */ = {
 			isa = PBXGroup;
 			children = (
+				71CB9F691DA95EC300AC89D2 /* UI */,
+				71BA9EDA1DA80DED00F3DF5D /* Tools */,
 				FBC5EC4A1C85A126006D5441 /* ParseExtension */,
 				FBA302411C83537600C63D00 /* Controllers */,
 				FBA302401C83537000C63D00 /* Cells */,
@@ -443,12 +467,14 @@
 				71C734BA1D37C2D00032FA12 /* Service.swift in Sources */,
 				71C734BB1D37C2D00032FA12 /* MessageUIViewController.swift in Sources */,
 				71BEB0D01D3BD2870098A767 /* AbstractMessageTableViewController.swift in Sources */,
+				71CB9F6C1DA95EE900AC89D2 /* SimpleButton.swift in Sources */,
 				71BEB0D31D3BD3E00098A767 /* StandaloneMessageTableViewController.swift in Sources */,
 				7106078C1D54FA7500CB2E00 /* AccountViewController.swift in Sources */,
 				71C734BC1D37C2D00032FA12 /* SharedNews.xcdatamodeld in Sources */,
 				71C734BD1D37C2D00032FA12 /* MessageTableViewCell.swift in Sources */,
 				71C734BE1D37C2D00032FA12 /* ServiceTableViewCell.swift in Sources */,
 				71C734BF1D37C2D00032FA12 /* LocalStoredPFQueryTableViewController.swift in Sources */,
+				71BA9EDD1DA80E0800F3DF5D /* SimpleLoader.swift in Sources */,
 				71C734C01D37C2D00032FA12 /* SharedMessageTableViewController.swift in Sources */,
 				71C734C11D37C2D00032FA12 /* DownloadCallbackFunction.swift in Sources */,
 				7115F0F11D4763BF00570678 /* MyPFSignUpViewController.swift in Sources */,
@@ -466,6 +492,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7115F0ED1D4762FD00570678 /* MyPFLogInViewController.swift in Sources */,
+				71CB9F6B1DA95EE900AC89D2 /* SimpleButton.swift in Sources */,
 				7106078E1D552E8B00CB2E00 /* TutorialViewController.swift in Sources */,
 				FBA3023C1C83532F00C63D00 /* DownloadTask.swift in Sources */,
 				FBA302461C8353CA00C63D00 /* Service.swift in Sources */,
@@ -486,6 +513,7 @@
 				FBA302451C8353CA00C63D00 /* Message.swift in Sources */,
 				FB3ADF651CA321FD0002E8BC /* ServiceSearchTableViewController.swift in Sources */,
 				FBA3023A1C83532F00C63D00 /* Commands.swift in Sources */,
+				71BA9EDC1DA80E0800F3DF5D /* SimpleLoader.swift in Sources */,
 				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
 				710607B11D55E67600CB2E00 /* Tutorial3ViewController.swift in Sources */,
 				FB3ADF671CA32E330002E8BC /* ServiceSearchTableViewCell.swift in Sources */,

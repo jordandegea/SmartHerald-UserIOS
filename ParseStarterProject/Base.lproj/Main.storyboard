@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="f3d-8U-Ouh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="f3d-8U-Ouh">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -133,15 +133,6 @@
                                             </fragment>
                                         </attributedString>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8w-ZX-cSM">
-                                        <rect key="frame" x="8" y="291" width="544" height="36"/>
-                                        <color key="backgroundColor" red="0.23921568627450981" green="0.52156862745098043" blue="0.99607843137254903" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="Sign Up"/>
-                                        <connections>
-                                            <action selector="onSignUpAction:" destination="yPm-rM-OC2" eventType="touchUpInside" id="u83-ML-uYM"/>
-                                        </connections>
-                                    </button>
                                     <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nks-77-PaS">
                                         <rect key="frame" x="8" y="117" width="544" height="30"/>
                                         <accessibility key="accessibilityConfiguration">
@@ -150,32 +141,37 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccd-Dx-e6z">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YsY-lL-iWK" customClass="SimpleButton" customModule="Smart_Herald" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="223" width="544" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="Log In"/>
+                                        <connections>
+                                            <action selector="onLogInAction:" destination="yPm-rM-OC2" eventType="touchUpInside" id="vHh-EP-4Tv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCc-R5-LI8" customClass="SimpleButton" customModule="Smart_Herald" customModuleProvider="target">
+                                        <rect key="frame" x="9" y="352" width="544" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="Logout"/>
+                                        <connections>
+                                            <action selector="onLogOutAction:" destination="yPm-rM-OC2" eventType="touchUpInside" id="QSa-qW-lDT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccd-Dx-e6z" customClass="SimpleButton" customModule="Smart_Herald" customModuleProvider="target">
                                         <rect key="frame" x="8" y="155" width="544" height="36"/>
-                                        <color key="backgroundColor" red="0.23921568630000001" green="0.52156862749999999" blue="0.99607843139999996" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <state key="normal" title="Create Anonymous account"/>
                                         <connections>
                                             <action selector="onCreateAnonymousAction:" destination="yPm-rM-OC2" eventType="touchUpInside" id="ajR-Om-zJY"/>
                                             <action selector="onLogInAction:" destination="yPm-rM-OC2" eventType="touchUpInside" id="SqM-BZ-tri"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YsY-lL-iWK">
-                                        <rect key="frame" x="8" y="223" width="544" height="36"/>
-                                        <color key="backgroundColor" red="0.23921568627450981" green="0.52156862745098043" blue="0.99607843137254903" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="Log In"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8w-ZX-cSM" customClass="SimpleButton" customModule="Smart_Herald" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="291" width="544" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="Sign Up"/>
                                         <connections>
-                                            <action selector="onLogInAction:" destination="yPm-rM-OC2" eventType="touchUpInside" id="vHh-EP-4Tv"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCc-R5-LI8">
-                                        <rect key="frame" x="9" y="352" width="544" height="36"/>
-                                        <color key="backgroundColor" red="0.23921568630000001" green="0.52156862749999999" blue="0.99607843139999996" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="Logout"/>
-                                        <connections>
-                                            <action selector="onLogOutAction:" destination="yPm-rM-OC2" eventType="touchUpInside" id="QSa-qW-lDT"/>
+                                            <action selector="onSignUpAction:" destination="yPm-rM-OC2" eventType="touchUpInside" id="u83-ML-uYM"/>
                                         </connections>
                                     </button>
                                 </subviews>

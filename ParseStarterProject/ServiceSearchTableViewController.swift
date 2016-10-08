@@ -99,23 +99,28 @@ class ServiceSearchTableViewController: LocalStoredPFQueryTableViewController, U
         let service:PFObject =  objectAtIndexPath(indexPath)!  ;
         
         let selfP = self ;
-        print(PFUser.currentUser()?.sessionToken);
-        print(service);
-        print(service.objectId);
+        
+        SimpleLoader.set("Subscribing", message: "Please wait...");
+        SimpleLoader.presentOn(self, animated: true, completion: nil)
+        
         PFCloud.callFunctionInBackground(
             "subscribe",
             withParameters: [
             "serviceId":service.objectId!,
         ]) {
             (response, error) in
+            
             PFCloud.callFunctionInBackground(
                 "update_installation",
                 withParameters: [
                     "installationId":PFInstallation.currentInstallation().objectId!,
-            ])
-            if (error == nil) {
-                selfP.dismissViewControllerAnimated(true, completion: {})
-            }
+                ])
+            
+            SimpleLoader.dismiss(true, completion: {
+                if (error == nil) {
+                    selfP.dismissViewControllerAnimated(true, completion: {})
+                }
+            })
         }
         
         /*

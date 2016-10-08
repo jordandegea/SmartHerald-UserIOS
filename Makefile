@@ -9,41 +9,77 @@
 
 
 ALTOOL="/Applications/Application Loader.app/Contents/Frameworks/ITunesSoftwareService.framework/Versions/A/Support/altool"
-	
+
+SRC= $(wildcard dists/standalone/*.xcconfig)
+DST= $(SRC:dists/standalone/%.xcconfig=%.make)	
+EMAIL="jordan.degea@gmail.com"
+
+help:
+	@echo ""
+	@echo "\tHow to use this make" 
+	@echo ""
+	@echo "\tmake publish : publish the shared version"
+	@echo "\tmake standalone : compile and publish all standalone version"
+
+shared: publish
+	@echo "Shared version uploaded"
+
+standalone: ${DST}
+	@echo "Standalone version uploaded"
+
 
 version:
 	xcode-select --print-path
-
-
-%.xcodeprojl:
-	xcodebuild -list -project $*.xcodeproj
-
-dists/standalone/%.xcconfig_simulator: 
-		xcrun xcodebuild \
-		  -scheme "StandaloneScheme" \
-		  -configuration Debug \
-		  -xcconfig "dists/standalone/$*.xcconfig" \
-		  -destination 'platform=iOS Simulator,name=iPhone 6' \
-		  -derivedDataPath \
-		  build
 
 # Then \
 simctl install FEDE6969-7CC2-4033-A1AC-E34422174877 build/Build/Products/Debug-iphonesimulator/Sinenco.app \
 simctl launch FEDE6969-7CC2-4033-A1AC-E34422174877 com.sinenco.sinenco
 
-#########################################################################################
-
-dists/standalone/%.xcconfig: dists/standalone/%.xcconfig_publish
-	echo "done"
-
-dists/standalone/%.xcconfig_publish: dists/standalone/%.xcconfig_swiftsupport
-	${ALTOOL} --upload-app -f "dists/standalone/$*/publish.ipa" -u "jordan.degea@gmail.com" -p "Bullet4my04"
+####################################################
+####        Etapes de publication shared        ####
+####################################################
 
 
-dists/standalone/%.xcconfig_swiftsupport: dists/standalone/%.xcconfig_compile
+
+publish: swiftsupport
+	${ALTOOL} --upload-app -f "dists/shared/publish/publish.ipa" -u ${EMAIL}
+
+
+swiftsupport: compile
 	./dists/SwiftSupport.sh $*
 
-dists/standalone/%.xcconfig_compile:
+compile:
+	rm -Rf "dists/shared/publish/publish.ipa" "dists/shared/publish/archive.xcarchive" && \
+	xcodebuild \
+		-alltargets \
+		-xcconfig "dists/shared/publish.xcconfig" \
+		-scheme "SharedScheme" \
+		-archivePath "dists/shared/publish/archive.xcarchive" \
+		archive && \
+	xcodebuild \
+		-exportArchive \
+		-exportFormat IPA \
+		-xcconfig "dists/shared/publish.xcconfig" \
+		-archivePath "dists/shared/publish/archive.xcarchive" \
+		-exportPath "dists/shared/publish/publish.ipa" 
+
+
+
+########################################################
+####        Etapes de publication standalone        ####
+########################################################
+
+%.make: %.publish 
+	echo "$* done "
+
+%.publish: %.swiftsupport
+	${ALTOOL} --upload-app -f "dists/standalone/$*/publish.ipa" -u "jordan.degea@gmail.com"
+
+
+%.swiftsupport: %.compile
+	./dists/SwiftSupport.sh $*
+
+%.compile:
 	rm -Rf "dists/standalone/$*/publish.ipa" "dists/standalone/$*/archive.xcarchive" && \
 	xcodebuild \
 		-alltargets \
@@ -54,13 +90,14 @@ dists/standalone/%.xcconfig_compile:
 	xcodebuild \
 		-exportArchive \
 		-exportFormat IPA \
+		-xcconfig "dists/standalone/$*.xcconfig" \
 		-archivePath "dists/standalone/$*/archive.xcarchive" \
-		-exportPath "dists/standalone/$*/publish.ipa" \
-		-exportSigningIdentity "iPhone Distribution: Jordan DE GEA (K27GN92373)"
+		-exportPath "dists/standalone/$*/publish.ipa" 
 
 
-#########################################################################################
-
+#####################################################
+####        Etapes de tests et simulation        ####
+#####################################################
 
 simulators:
 	xcrun simctl list
@@ -78,6 +115,17 @@ test:
 
 
 
+%.xcodeprojl:
+	xcodebuild -list -project $*.xcodeproj
+
+dists/standalone/%.xcconfig_simulator: 
+		xcrun xcodebuild \
+		  -scheme "StandaloneScheme" \
+		  -configuration Debug \
+		  -xcconfig "dists/standalone/$*.xcconfig" \
+		  -destination 'platform=iOS Simulator,name=iPhone 6' \
+		  -derivedDataPath \
+		  build
 
 dists/standalone/%.xcconfigp:
 	xcrun \
@@ -96,3 +144,4 @@ dists/standalone/%.xcconfigp:
 
 %.xcodeproj:
 	 xcodebuild -scheme "Shared News" build
+

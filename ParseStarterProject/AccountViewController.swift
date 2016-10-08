@@ -26,20 +26,13 @@ class AccountViewController: UIViewController, PFLogInViewControllerDelegate, PF
     @IBOutlet weak var logOutButton: UIButton!
     
     @IBAction func onCreateAnonymousAction(sender: AnyObject) {
+        SimpleLoader.set("Creating anonymous account", message: "Please wait...");
+        SimpleLoader.presentOn(self, animated: true, completion: nil)
+            
         PFAnonymousUtils.logInWithBlock { (user:PFUser?, error:NSError?) in
             self.loadFields();
+            SimpleLoader.dismiss(true, completion: {})
         }
-        if #available(iOS 8.0, *) {
-            let refreshAlert = UIAlertController(title: "Creating anonymous account", message: "Please wait...", preferredStyle: UIAlertControllerStyle.Alert)
-            refreshAlert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: { (action: UIAlertAction!) in
-                
-            }))
-            
-            self.presentViewController(refreshAlert, animated: true, completion: nil)
-        } else {
-            // Fallback on earlier versions
-        }
-        
     }
     
     @IBAction func onLogInAction(sender: AnyObject) {
@@ -52,8 +45,14 @@ class AccountViewController: UIViewController, PFLogInViewControllerDelegate, PF
     
     
     @IBAction func onLogOutAction(sender: AnyObject) {
-        PFUser.logOut()
+        SimpleLoader.setDefault();
+        SimpleLoader.presentOn(self, animated: true, completion: nil)
+        
+        PFUser.logOut();
         loadFields();
+        
+        SimpleLoader.dismiss(true, completion: {})
+        
     }
     
     override func viewDidLoad() {
@@ -65,7 +64,6 @@ class AccountViewController: UIViewController, PFLogInViewControllerDelegate, PF
         super.viewWillAppear(animated)
         if (tutorial==true){
             tutorial=false;
-            print("want to tutorial")
             self.performSegueWithIdentifier("accountToTutorial", sender: self)
         }
     }
